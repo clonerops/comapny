@@ -1,3 +1,7 @@
 @import 'abstratcts/variables';
 
-@import 'base/base'
+@import 'base/base', 'base/fonts';
+
+@import 'components/logo', 'components/nav';
+
+@import 'layout/container', 'layout/header';

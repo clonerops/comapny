@@ -1,0 +1,23 @@
+.nav {
+    &__lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__list {
+        padding: 0 1rem;
+        color: $white-color;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &__link {
+    }
+
+}

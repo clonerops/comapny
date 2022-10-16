@@ -10,4 +10,91 @@ html {
 
 body {
   font-size: 1.5rem;
+  font-family: Signika-Reqular;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Signika-Reqular;
+  src: url("../public/fonts/Signika-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Signika-Bold;
+  src: url("../public/fonts/Signika-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Signika-Light;
+  src: url("../public/fonts/Signika-Light.ttf");
+  font-weight: normal;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo__title {
+  padding: 0 1rem;
+  color: #FF00FF;
+}
+
+.nav__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__list {
+  padding: 0 1rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+.nav__list:hover {
+  color: #FF00FF;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 0;
 }/*# sourceMappingURL=main.css.map */
