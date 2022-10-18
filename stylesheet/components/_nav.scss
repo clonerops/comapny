@@ -4,7 +4,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     &__list {
         padding: 0 1rem;
         color: $white-color;
@@ -12,6 +12,7 @@
         text-decoration: none;
         list-style: none;
         transition: all 0.5s ease-in-out;
+
         &:hover {
             color: $primary-color;
         }
@@ -19,6 +20,48 @@
 
     &__link {
         font-size: 1.3rem;
+    }
+
+    // Responsive
+
+    &__menu {
+        display: none;
+    }
+    .nav__responsive {
+        display: none;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .nav__lists {
+            display: none;
+        }
+
+        .nav__label {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 3rem;
+            height: 3rem;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .nav__label>span {
+            height: .4rem;
+            border-radius: .5rem;
+            background-color: $white-color;
+        }
+
+        .nav__responsive {
+            display: flex;
+            flex-direction: column;
+        }
+    
+
+        // .nav__menu:checked ~ .nav__label>span {
+        //         height: .8rem;
+        // }
+
     }
 
 }

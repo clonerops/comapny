@@ -63,6 +63,38 @@ body {
 .nav__link {
   font-size: 1.3rem;
 }
+.nav__menu {
+  display: none;
+}
+.nav .nav__responsive {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .nav .nav__lists {
+    display: none;
+  }
+  .nav .nav__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 3rem;
+    height: 3rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }
+  .nav .nav__label > span {
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+  }
+  .nav .nav__responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .content {
   width: 100%;
