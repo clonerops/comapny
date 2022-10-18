@@ -1,7 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Content from '../components/Content'
+import HomePage from '../components/HomePage'
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
+import Social from '../components/Social'
 const Home: NextPage = () => {
   return (
     <div>
@@ -16,6 +19,10 @@ const Home: NextPage = () => {
           <Logo />
           <Nav />
         </div>
+        <Content>
+          <HomePage />
+        </Content>
+        <Social />
       </main>
     </div>
   )

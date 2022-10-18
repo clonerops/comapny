@@ -2,6 +2,8 @@
 
 @import 'base/base', 'base/fonts';
 
-@import 'components/logo', 'components/nav';
+@import 'components/logo', 'components/nav', 'components/content', 'components/social';
 
 @import 'layout/container', 'layout/header';
+
+@import 'pages/homepage';

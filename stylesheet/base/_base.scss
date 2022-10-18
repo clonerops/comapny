@@ -10,10 +10,15 @@ html {
 
 body {
     font-size: 1.5rem;
-    font-family: Signika-Reqular;
+    font-family: Signika-Light;
     width: 100%;
     height: 100%;
     background-image: url('../assets/images/back.webp');
-    background-repeat: no-repeat;
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    background-position: left top;
+    // position: fixed; 
+    // overflow-y: none;
+    // overscroll-behavior: contain;
+    // top: 0; right: 0; bottom: 0; left: 0; 
+ }
